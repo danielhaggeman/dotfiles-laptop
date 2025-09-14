@@ -107,5 +107,6 @@ window#waybar {
 
 #custom-spotify {
     padding-left: 0px;    /* remove default padding */
-    margin-left: -5px;    
+    margin-left: -5px;    /* shift closer to left edge, adjust as needed */
 }
+

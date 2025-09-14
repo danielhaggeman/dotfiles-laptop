@@ -65,8 +65,8 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "custom/spotify": {
-    "exec": "/usr/bin/python3 /home/daniel/bin/mediaplayer.py --player spotify",
-    "format": "<span size='18000'></span>   {}",
+    "exec": "/usr/bin/python3 ~/.config/hypr/scripts/mediaplayer.py --player spotify",
+    "format": "<span size='17000'></span> {}",
     "return-type": "json",
     "on-click": "/home/daniel/bin/spotify-wofi.sh",
     "on-scroll-up": "playerctl next",
@@ -74,4 +74,3 @@
     }
 
 }
-

@@ -14,6 +14,9 @@ for folder in "${CONFIG_FOLDERS[@]}"; do
     cp -r ~/.config/"$folder" .config/ 2>/dev/null
 done
 
+# Copy .zshrc
+cp ~/.zshrc . 2>/dev/null
+
 # Only commit if there are changes
 if ! git diff-index --quiet HEAD --; then
     git add .
