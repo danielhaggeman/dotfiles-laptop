@@ -21,6 +21,6 @@ cp ~/.zshrc . 2>/dev/null
 if ! git diff-index --quiet HEAD --; then
     git add .
     git commit -m "Auto-backup: $(date '+%Y-%m-%d %H:%M:%S')"
-    git push origin dotfiles-laptop
+    git push origin main
 fi
 
