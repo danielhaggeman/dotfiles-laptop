@@ -7,10 +7,11 @@ if [ -f "$HOME/.cache/wal/colors.sh" ]; then
 fi
 
 printf "\n"
-fastfetch
+#fastfetch
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.spicetify:$PATH"
 export STEAM_FORCE_X11=1
+export PATH="$HOME/go/bin:$PATH"
 
 ZSH_THEME="agnosterzak"
 
@@ -51,3 +52,4 @@ setopt appendhistory
 PROMPT='%n %~ %# '
 
 
+export PATH=$HOME/.local/bin:$PATH

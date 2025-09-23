@@ -48,11 +48,12 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
+	"on-click": "nm-connection-editor &"
 	 
     },
     "cpu": {
         "format": "  {usage}%",
+
         "tooltip": true
     },
     "memory": {
@@ -60,17 +61,20 @@
 	"tooltip": true
     },
     "clock": {
-        "format": "{:%H:%M | %e %B} ",
+        "format": "{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
-    "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.config/hypr/scripts/mediaplayer.py --player spotify",
-    "format": "<span size='17000'></span> {}",
-    "return-type": "json",
-    "on-click": "/home/daniel/bin/spotify-wofi.sh",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
+    "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+        "good": 80,
+        "warning": 30,
+        "critical": 15
+    },
+    "format-charging": "{icon} {capacity}% 󰂄",
+    "format-plugged": "{icon} {capacity}% "
     }
 
 }

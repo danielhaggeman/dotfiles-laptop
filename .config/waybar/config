@@ -10,15 +10,15 @@
         "hyprland/workspaces",    
     ],
     "modules-center": [
-        "custom/spotify"
-    ],
+        "clock"
+    ], 
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
         "network",
         "cpu",
         "memory",
-        "clock"
+        "battery",
     ],
     //Modules configuration
 
