@@ -1,1 +1,1 @@
-Hyprland's config files for my Nobara setup.
+Hyprland config files for my Nobara setup.
