@@ -1,2 +1,1 @@
-The dotfiles from my laptops hyprland setup 
-Distro is Nobara
+Hyprland's config files for my Nobara setup.
