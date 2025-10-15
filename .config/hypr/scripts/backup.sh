@@ -15,10 +15,10 @@ for folder in "${CONFIG_FOLDERS[@]}"; do
     cp -r ~/.config/"$folder" .config/ 2>/dev/null
 done
 
-# Copy SDDM configs (system-level)
-mkdir -p sddm
-cp /etc/sddm.conf sddm/ 2>/dev/null
-cp -r /etc/sddm.conf.d/* sddm/ 2>/dev/null
+# Copy system-level SDDM configs into .config/sddm
+mkdir -p .config/sddm
+cp /etc/sddm.conf .config/sddm/ 2>/dev/null
+cp -r /etc/sddm.conf.d/* .config/sddm/ 2>/dev/null
 
 # Copy .zshrc
 cp ~/.zshrc . 2>/dev/null
