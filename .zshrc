@@ -34,12 +34,6 @@ source $ZSH/oh-my-zsh.sh
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
 # Set-up icons for files/directories in terminal using lsd
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
-
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 
@@ -54,3 +48,9 @@ PROMPT='%n %~ %# '
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH="$PATH:/opt/mssql-tools/bin"
+
+# Fix for unknown terminal types like xterm-kitty
+if [ "$TERM" = "xterm-kitty" ]; then
+  export TERM=xterm
+fi
+
