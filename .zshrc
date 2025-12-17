@@ -5,7 +5,7 @@
 
 # E for Yazi
 alias e="yazi"
-
+alias g="nmcli connection up FoundryManagement"
 # Enable colors
 autoload -U colors && colors
 
